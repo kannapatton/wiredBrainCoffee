@@ -6,35 +6,61 @@
     <title>Hot Cocoa Recipe</title>
 </head>
 <body>
+
  <header>
+
     <h2>Wired Brain Coffee Extras</h2>
+    
  </header>
  <article title="Hot Cocoa Recipe">
+   
     <h1>Hot Cocoa Recipe</h1>
 
     <h3>Ingredients</h3>
+
 <!-- unordered list would work well for ingredients -->
- <ul>
-<li>2 <abbr title="Tablespoon">T</abbr> Wired Brain Coffee Hot Cocoa Mix</li>
- <li>8 <abbr title="Ounces">oz</abbr> Milk</li>
-<li>Marshmallows (optional)</li>
+ <!-- can style unordered lists as well -->
+<ul style="list-style-type: square;">
+    <li>2 <abbr title="Tablespoon">T</abbr> Wired Brain Coffee Hot Cocoa Mix</li>
+    <li>8 <abbr title="Ounces">oz</abbr> Milk</li>
+    <li>Marshmallows (optional)</li>
 </ul>
+
     <h3>Steps</h3>
 <!-- ordred list would work better for the steps -->
- 
-<ol>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
+<!-- there are types for ordered lists such as roman numerals -->
+ <!-- can make ordered lists start on numbers besides one, would just add start="2" (if want to start on 2 )after type -->
+<!-- can also reverse by adding reversed after type  -->
+ <ol type="1">
+    <li>Scoop Hot Cocoa Mix into a mug.</li>
+    <li>Heat milk on the stove or in the microwave to just below a boil.</li>
+    
+    <!-- nested ordered list with roman numeral, but lower case -->
+    <ol type="A">
+        <li>Microwave on high for 30 seconds.</li>
+        <li></li>
+    </ol>
+   
+    <li>Pour milk into the mug, stirring gently as you pour.</li>
+    <li>Stir until mix is fully dissolved in the milk.</li>
+    <li>Top with marshmallows if you desire.</li>
 </ol>
  
  </article> 
+
+
  <section title="Interesting Cocoa Facts">
     <h4>Cocoa Facts</h4>
-
-
+    <span>Do you know the difference?</span>
+<!-- definition list -->
+ <dl>
+    <!-- definition term -->
+    <dt>Cocoa</dt>
+    <!-- definition definition -->
+    <dd>Cocoa is the powdered substance left after processing cacao beans and has little or no cacoa butter.</dd>
+    <dt>Chocolate</dt>
+    <dd></dd>
+    </dl>
  </section> 
 </body>
 </html>
