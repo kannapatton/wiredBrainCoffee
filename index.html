@@ -9,9 +9,12 @@
 
     <header>
         <!-- can make multiple items into one link like below, also this is an example of an ABSOLUTE REFERENCE -->
-         <a href="https://pluralsight.com">
-    <h1>Wired Brain Coffee</h1>
-    <h2>Coffee to keep your brain wired!</h2>
+         <!-- target blank should open link in new tab -->
+          <!-- noreferrer and noopener  means don't give it access to my window and don't tell it where it came from -->
+           <!-- removes a connection from the new page and the page you came from -->
+        <a href="https://pluralsight.com" target="_blank" rel="noreferrer noopener" >
+        <h1>Wired Brain Coffee</h1>
+        <h2>Coffee to keep your brain wired!</h2>
         </a>
     <nav>
         <!-- use emmet to create list ul>li*2 -->
@@ -19,6 +22,7 @@
         <ul>
             <li><a href="./content/recipes.html">Recipes</a></li>
             <li><a href="./content/nutrition.html">Nutrition Information</a></li>
+            <li><a href="./content/recipes.html#brownies">Special: Brownies</a></li>
         </ul>
     </nav>
     </header>

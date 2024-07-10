@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <style>
+        /* can apply style to the entire table */
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* th table head, td table data */
+        th, td {
+        border-width: 2px;
+        border-style: solid;
+        padding: 5px;
+        }
+        /* since selected 2 columns and named it class carbs, we can select and style them */
+        .carbs  {
+            background-color: yellow;
+        }
+        .names {
+            background-color: aquamarine;
+        }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Wired Brain Coffee</h1>
+        <h2>Nutrition Information</h2>
+       
+     </header>
+     <section id="nutrition">
+     <p>
+        Wired Brain Coffee believes it is important for you to know what you put in your body. 
+        To that end, here is the nutritional information for out products.
+    </p>
+    <table>
+        <caption>Wired Brain Nutritional Information</caption>
+        <colgroup>
+            <!-- col span 1 will select first column -->
+        <col span="1" class="names"/>
+        <col span="4" class="other" />
+        <!-- now the last 2 will be grouped together and we can select it -->
+        <col span="2" class="carbs" />
+    </colgroup>
+        <thead>
+            <tr>
+                <!-- rowspan="2" centers Drink between two rows -->
+                <th rowspan="2">Drink</th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+                <!-- colspan ="2" centers the column over 2 columns -->
+                 <!-- there are only 6 th here but the last one takes up 2 spaces  -->
+                <th colspan="2">Carbohydrates</th>
+            </tr>
+        <tr>
+            <!-- <th>Drink</th> -->
+            <th>Serving Size</th>
+            <th>Calories</th>
+            <th>Fat (g)</th>
+            <th>Protein (g)</th>
+            <th>Sugar (g)</th>
+            <th>Fiber (g)</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Hot Cocoa</th>
+                <td>8 oz</td>
+                <td>250</td>
+                <td>5</td>
+                <td>2</td>
+                <td>25</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <th>Mocha</th>
+                <td>8 oz</td>
+                <td>275</td>
+                <td>15</td>
+                <td>2</td>
+                <td>25</td>
+                <td>0</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Max</th>
+                <td></td>
+                <td>275</td>
+                <td>15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+    </section>
+    <br>
+    <br>
+    <footer>
+        &copy;Matt Milner
+    </footer>
+    </body>
+</html>

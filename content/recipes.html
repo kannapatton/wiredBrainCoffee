@@ -18,10 +18,18 @@
         <!-- class active made a very subtle change to gray text color -->
         <li class="breadcrumb-item active">Hot Cocoa</li>
     </ol>
+    <nav>
+        <ul>
+            <!-- links to locations on same page -->
+             <!-- the # within a hyperlink specifies an HTML element ID to which the window will scroll -->
+            <li><a href="#cocoa">Hot Cocoa</a></li>
+            <li><a href="#brownies">Brownie Bars</a></li>
+        </ul>
+    </nav>
  </header>
- <article title="Hot Cocoa Recipe">
-   
-    <h1>Hot Cocoa Recipe</h1>
+ <section id="Hot Cocoa Recipe">
+   <a name="cocoa"><h1>Hot Cocoa Recipe</h1></a>
+    
 
     <h3>Ingredients</h3>
 
@@ -53,7 +61,41 @@
     <li>Top with marshmallows if you desire.</li>
 </ol>
  
- </article> 
+ </section> 
+
+ <div id="brownies">
+    <h1>Brownie Bars</h1>
+
+    <h3>Ingredients</h3>
+
+<!-- unordered list would work well for ingredients -->
+ <!-- can style unordered lists as well -->
+<ul style="list-style-type: square;">
+    <li>2 <abbr title="Tablespoon">T</abbr> Wired Brain Coffee Hot Cocoa Mix</li>
+    <li>8 <abbr title="Ounces">oz</abbr> Milk</li>
+    <li>Marshmallows (optional)</li>
+</ul>
+
+    <h3>Steps</h3>
+<!-- ordred list would work better for the steps -->
+<!-- there are types for ordered lists such as roman numerals -->
+ <!-- can make ordered lists start on numbers besides one, would just add start="2" (if want to start on 2 )after type -->
+<!-- can also reverse by adding reversed after type  -->
+ <ol type="1">
+    <li>Scoop Hot Cocoa Mix into a mug.</li>
+    <li>Heat milk on the stove or in the microwave to just below a boil.</li>
+    
+    <!-- nested ordered list with roman numeral, but lower case -->
+    <ol type="A">
+        <li>Microwave on high for 30 seconds.</li>
+        <li></li>
+    </ol>
+   
+    <li>Pour milk into the mug, stirring gently as you pour.</li>
+    <li>Stir until mix is fully dissolved in the milk.</li>
+    <li>Top with marshmallows if you desire.</li>
+</ol>
+ </div>
 
 
  <section title="Interesting Cocoa Facts">
